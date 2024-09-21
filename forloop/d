@@ -1,0 +1,14 @@
+function valid(){
+    document.getElementById("phno_error").innerHTML=""
+    name=document.getElementById("name").value
+    phno=document.getElementById("phno").value
+    email=document.getElementById("email").value
+    pincode=document.getElementById("pincode").value
+    console.log(name,phno,email,pincode);
+    if(phno.length!=10){
+        document.getElementById("phno_error").innerHTML="* invalid number"
+    }
+
+
+
+}
