@@ -1,11 +1,13 @@
 function valid() {
-    const name = document.getElementById('name').value;
-    const phno = document.getElementById('phno').value;
-    const email = document.getElementById('email').value;
-    const pincode = document.getElementById('pincode').value;
-    let isValid = true;
+    name = document.getElementById('name').value;
+    phno = document.getElementById('phno').value;
+    email = document.getElementById('email').value;
+    pincode = document.getElementById('pincode').value;
+    isValid = true;
 
     document.getElementById('phno_error').textContent = '';
+    document.getElementById('email_error').textContent = '';
+    document.getElementById('pincode_error').textContent = '';
 
     
     if (!name) {
@@ -23,13 +25,15 @@ function valid() {
    
      emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
-        alert('Please enter a valid email address.');
+        // alert('Please enter a valid email address.');
+        document.getElementById('email_error').textContent = 'Please enter a valid Email ID.';
         isValid = false;
     }
 
      pincodePattern = /^[0-9]{6}$/;
     if (!pincodePattern.test(pincode)) {
-        alert('Please enter a valid 6-digit pincode.');
+        // alert('Please enter a valid 6-digit pincode.');
+        document.getElementById('pincode_error').textContent = 'Please enter six digit pincode.';
         isValid = false;
     }
 
