@@ -16,7 +16,7 @@ function valid() {
     }
 
   
-     phonePattern = /^[0-9]{10}$/;
+     phonePattern = /^[6-9][0-9]{9}$/;
     if (!phonePattern.test(phno)) {
         document.getElementById('phno_error').textContent = 'Please enter a valid 10-digit phone number.';
         isValid = false;
