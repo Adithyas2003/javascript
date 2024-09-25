@@ -1,14 +1,14 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Table</title>
-    <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="demo.css">
 </head>
 <body>
     
-    <table>
+    <table id="peopletable">
         <thead>
             <tr>
                 <th>ID</th>
@@ -20,31 +20,39 @@
             
         </tbody>
     </table>
-    <div>
-        <label for="id">ID:</label>
-        <input type="text" id="id" name="id">
-    </div>
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-    </div>
-    <div>
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" >
-    </div>
-    <button type="submit">Submit</button>
-       
-</body>
-</html> -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="demo.js"></script>
-</head>
-<body>
-    
+    <form id="submitform">
+        <div>
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" >
+        </div>
+        <button type="submit">Submit</button>  
+
+    </form>
+
+      <form id="editform">
+        <div>
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" >
+        </div>
+        <button type="edit">edit</button>  
+
+    </form>
+    <script src="demo.js"></script> 
 </body>
 </html>
