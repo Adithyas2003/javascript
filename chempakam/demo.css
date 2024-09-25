@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+header {
+    background-color: rgb(46, 45, 45); /* Dark background for the header */
+    color: white; /* White text color */
+    padding: 20px; /* Padding for header */
+}
+
+.headerleft {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+}
+
+.mainnavbar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    margin-right: 20px; /* Space between logo and nav links */
+}
+
+.logo img {
+    height: 50px; /* Set a fixed height for logo */
+}
+
+.nav-links {
+    display: flex; /* Display links in a row */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Space between links */
+}
+
+.nav-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Padding for links */
+    position: relative; /* Position for dropdown arrow */
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+
+.dropdown-arrow {
+    margin-left: 5px; /* Space between link text and arrow */
+}
+
+.searchbar {
+    display: flex; /* Flexbox for search bar */
+    align-items: center; /* Center items vertically */
+    gap: 5px; /* Space between icon and input */
+    border: 1px solid white; /* Border for search bar */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside the search bar */
+}
+
+.searchbar input {
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    background: transparent; /* Transparent background */
+    padding: 5px; /* Padding inside input */
+    flex-grow: 1; /* Allow input to take available space */
+}
+
+.searchbar .material-symbols-outlined {
+    color: white; /* Icon color */
+    font-size: 20px; /* Icon size */
+}
+
+.searchbar .search-icon {
+    width: 20px; /* Set a fixed width for the search image */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.facebooklogo {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between icons */
+    margin-left: 20px; /* Space to the left of icons */
+}
+
+.facebooklogo img {
+    width: 30px; /* Set a fixed width for the icons */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure icons scale correctly */
+}
+
+.container2 {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.category-item {
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+}
+
+.category-item .circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.category-item .circle img {
+    width: 100%;
+    height: auto;
+}
+
+.category-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
