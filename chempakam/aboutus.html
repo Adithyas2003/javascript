@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Light background color */
+        }
+
+        .headerleft {
+            background-color: #250e0e; /* White background for the header */
+            padding: 10px 20px; /* Padding around the header */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        .mainnavbar {
+            display: flex;
+            align-items: center; /* Align items vertically */
+            justify-content: space-between; /* Space between items */
+        }
+
+        .logo img {
+            max-height: 50px; /* Limit logo height */
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center; /* Center items vertically */
+        }
+
+        .nav-links a {
+            margin: 0 15px; /* Space between links */
+            text-decoration: none; /* Remove underline */
+            color: #333; /* Dark text color */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        .nav-links a:hover {
+            color: #007bff; /* Change color on hover */
+        }
+
+        .searchbar {
+            display: flex;
+            align-items: center; /* Center the search bar elements */
+            margin-left: 20px; /* Space before search bar */
+        }
+
+        .searchbar input {
+            padding: 5px; /* Padding for the input */
+            border: 1px solid #ccc; /* Light border */
+            border-radius: 4px; /* Rounded corners */
+            margin-right: 5px; /* Space between input and icon */
+        }
+
+        .search-icon {
+            width: 20px; /* Size of the search icon */
+            cursor: pointer; /* Change cursor on hover */
+        }
+
+        .facebooklogo {
+            display: flex; /* Display logos in a row */
+            margin-left: auto; /* Push to the right */
+        }
+
+        .facebooklogo img {
+            width: 25px; /* Size of social icons */
+            margin-left: 10px; /* Space between icons */
+        }
+        .containers {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between containers */
+    margin: 20px; /* Margin around the containers */
+    max-width: 1200px; /* Limit the max width */
+    margin: auto; /* Center the containers */
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the containers */
+}
+
+.containers1,
+.containers2 {
+    flex: 1; /* Allow both containers to grow equally */
+    margin: 10px; /* Margin between the containers */
+}
+
+p {
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Dark text color */
+    font-size: 16px; /* Base font size */
+}
+
+
+@media (max-width: 768px) {
+    .containers {
+        flex-direction: column; /* Stack containers on smaller screens */
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="headerleft">
+        <div class="mainnavbar">
+            <div class="logo">
+                <img src="./image/logo.png" alt="">
+            </div>
+            <div class="nav-links">
+                <a href="#">Shop now
+                    <span class="dropdown-arrow">▼</span>
+                </a>
+                <a href="#">Reviews</a>
+                <a href="#">About us</a>
+                <a href="#">Contact us</a>
+                <div class="searchbar">
+                    <span class="material-symbols-outlined">product code</span>
+                    <input type="text" placeholder="Search...">
+                    <img src="./image/search-interface-symbol.png" alt="Search" class="search-icon">
+                </div>
+                <div class="facebooklogo">
+                    <img src="./image/facebook.png" alt="">
+                    <img src="./image/linkedin.png" alt="">
+                    <img src="./image/heart.png" alt="">
+                    <img src="./image/shopping-bag.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <img src="./image/Screenshot from 2024-09-27 17-23-51.png" alt="">
+    </div>
+    <div class="containers">
+        <div class="containers1">
+            <p>
+
+                Driven by passion, we have established ourselves as a prominent and preferred online seller of women clothing in the region. With our own production facilities and in house design team, we create innovative and unique products, at affordable prices.
+                
+                Customers recognize us for the simplicity & elegance of our materials and unmatched service quality.
+                
+                We are flexible for everything but quality. The QA team manually checks every piece of work and ensures adherence to the highest standards before it reaches the customers. We do not compromise or negotiate on quality.
+                </p>
+        </div>
+        <div class="containers2">
+            <p>
+
+                Chempakam respects and welcomes our clients’ creativity. You like to have your ideas and dreams transformed into your clothing; you are at the right place. Our designers can help you develop or give finishing touches to your ideas and have it tailored your way.
+                
+                We are committed to respond to all queries in a prompt and professional manner. Same hour response is guaranteed, if not within the quarter during our working hours.
+                
+                We ship across India for free and to other countries with a fee.
+                </p>
+        </div>
+    </div>
+</body>
+
+</html>

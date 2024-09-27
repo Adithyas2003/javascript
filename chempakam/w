@@ -1,0 +1,244 @@
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    text-align: 50px;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+}
+.logosection {
+    /* display: flex; */
+    flex-direction: column; /* Stacks images vertically */
+    align-items: center; /* Centers images horizontally */
+
+}
+
+.logosection img {
+    margin: 5px 0; /* Adds space between images */
+    width: 20px;
+    padding: 10px;
+}
+<div class="footer-bottom">
+                <p>&copy; 2024 Puma. All Rights Reserved. | Privacy Policy | Terms of Use</p>
+            </div>
+            </footer>
+             
+            </body>
+            </html>
+            .footer {
+                background-color: #363636; /* Light gray background */
+                padding: 20px 0; /* Top and bottom padding */
+                display: flex;
+                flex-wrap: wrap; /* Allows wrapping of footer sections */
+                justify-content: space-around; /* Evenly space sections */
+                align-items: flex-start; /* Align items to the top */
+            }
+            
+            .footer-container {
+                max-width: 1200px; /* Limit the width */
+                margin: 0 auto; /* Center the footer */
+                width: 100%;
+            }
+            .footer-container img{
+                width: 100%;
+                height: auto;
+            }
+            
+            
+            .footer-section {
+                flex: 1; /* Flexibly grow sections */
+                min-width: 200px; /* Minimum width for responsiveness */
+                margin: 10px; /* Margin around sections */
+            }
+            
+            .footer-section h4 {
+                margin-bottom: 10px; /* Spacing for headings */
+            }
+            
+            .footer-section ul {
+                list-style: none; /* Remove default list styles */
+                padding: 0; /* Remove padding */
+            }
+            
+            .footer-section ul li {
+                margin: 5px 0; /* Space between list items */
+            }
+            
+            .footer-section ul li a {
+                text-decoration: none; /* Remove underline */
+                color: #333; /* Dark text color */
+                transition: color 0.3s; /* Transition for hover effect */
+            }
+            
+            .footer-section ul li a:hover {
+                color: #007bff; /* Change color on hover */
+            }
+            
+            .logos {
+                display: flex; /* Display logos in a row */
+                flex-wrap: wrap; /* Allow wrapping */
+                /* justify-content: center;  */
+                align-items: center; /* Align logos vertically */
+                margin: 10px 0; /* Margin for spacing */
+                /* width: 2px;
+                height: 2px; */
+            }
+            .logos img{
+                width: 20px;
+                height: 20px;
+                padding: 10px;
+            }
+            .footer-logo {
+                max-width: 150px; /* Limit logo size */
+                margin-bottom: 20px; /* Space below the logo */
+            }
+            
+            .social-icons img {
+                width: 30px; /* Set size for social icons */
+                margin: 0 5px; /* Space between icons */
+            }
+            
+            .footer-bottom {
+                text-align: center; /* Center the bottom text */
+                margin-top: 20px; /* Space above the bottom text */
+                font-size: 14px; /* Smaller font size */
+                color: #666; /* Gray color */
+            }
+            <footer class="footer">
+            <div class="footer-container">
+                  <div class="footer-section logo-section">
+                      <img src="./image/logo.png" alt="Puma Logo" class="footer-logo">
+                  </div>
+                  <div class="logos">
+                    <img src="./image/20837f.png" alt="">
+                    <img src="./image/733635t.png" alt="">
+                    <img src="./image/1384088l.png" alt="">
+                    <img src="./image/3661391i.png" alt="">
+                    <img src="./image/4926510p.png" alt="">
+                  </div>
+            
+                <div class="footer-section">
+                    <!-- <h4>solutions</h4> -->
+                    <p>&copy;  All rights reserved by Chempakam, Cochin, India.</p>
+                    <ul>
+                       
+                       
+                    </ul>
+                </div>
+            
+                <div class="footer-section">
+                    <h4>solutions</h4>
+                    <ul>
+                        <li><a href="#">My account</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        
+                    </ul>
+                </div>
+            
+                <div class="footer-section">
+                    <h4>about US</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+            
+                <div class="footer-section social-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <img src="./image/1216844.png" alt="" title="Kureekkadu, Ernakulam, Kerala">
+                        <img src="./image/831360p.png" alt="" title="+91-86065 70657">
+                        <img src="./image/instagram.png" alt="" title="Mon - Sat / 9:00AM - 6:00PM">
+                        
+                    </div>
+                </div>
+                
+            
+            </body>
+            </html>
+            .footer {
+                background-color: #363636; /* Light gray background */
+                padding: 20px 0; /* Top and bottom padding */
+                display: flex;
+                flex-wrap: wrap; /* Allows wrapping of footer sections */
+                justify-content: space-around; /* Evenly space sections */
+                align-items: flex-start; /* Align items to the top */
+            }
+            
+            .footer-container {
+                max-width: 1200px; /* Limit the width */
+                margin: 0 auto; /* Center the footer */
+                width: 100%;
+            }
+            .footer-container img{
+                width: 100%;
+                height: auto;
+            }
+            
+            
+            .footer-section {
+                flex: 1; /* Flexibly grow sections */
+                min-width: 200px; /* Minimum width for responsiveness */
+                margin: 10px; /* Margin around sections */
+            }
+            
+            .footer-section h4 {
+                margin-bottom: 10px; /* Spacing for headings */
+            }
+            
+            .footer-section ul {
+                list-style: none; /* Remove default list styles */
+                padding: 0; /* Remove padding */
+            }
+            
+            .footer-section ul li {
+                margin: 5px 0; /* Space between list items */
+            }
+            
+            .footer-section ul li a {
+                text-decoration: none; /* Remove underline */
+                color: #333; /* Dark text color */
+                transition: color 0.3s; /* Transition for hover effect */
+            }
+            
+            .footer-section ul li a:hover {
+                color: #007bff; /* Change color on hover */
+            }
+            
+            .logos {
+                display: flex; /* Display logos in a row */
+                flex-wrap: wrap; /* Allow wrapping */
+                /* justify-content: center;  */
+                align-items: center; /* Align logos vertically */
+                margin: 10px 0; /* Margin for spacing */
+                /* width: 2px;
+                height: 2px; */
+            }
+            .logos img{
+                width: 20px;
+                height: 20px;
+                padding: 10px;
+            }
+            .footer-logo {
+                max-width: 150px; /* Limit logo size */
+                margin-bottom: 20px; /* Space below the logo */
+            }
+            
+            .social-icons img {
+                width: 30px; /* Set size for social icons */
+                margin: 0 5px; /* Space between icons */
+            }
+            
+            .footer-bottom {
+                text-align: center; /* Center the bottom text */
+                margin-top: 20px; /* Space above the bottom text */
+                font-size: 14px; /* Smaller font size */
+                color: #666; /* Gray color */
+            }
+            
