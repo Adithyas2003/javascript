@@ -299,7 +299,7 @@ header {
     background-color: #f8f9fa; 
 }
 
-.product1 {
+.products1 {
     max-width: 1200px; /* Set a max width */
     margin: 0 auto; /* Center align */
     text-align: center; /* Center text */
@@ -311,7 +311,7 @@ header {
     gap: 15px; /* Space between items */
 }
 
-.product-item {
+.product-item1 {
     background-color: #fff; /* White background for products */
     border-radius: 8px; /* Rounded corners */
     padding: 30px; /* Padding inside product item */
@@ -322,11 +322,112 @@ header {
     height: auto; /* Maintain aspect ratio */
 }
 
-.product1 h1 {
+.products1 h1 {
     color: grey; /* Heading color */
 }
 .productbtn1 {
     text-align: center; /* Center text inside the div */
     margin: 20px 0; /* Space above and below the button */
 }
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    text-align: 50px;
+    font-family: Arial, sans-serif;
+    margin-top: 40px;
+}
+.logosection {
+    /* display: flex; */
+    flex-direction: column; /* Stacks images vertically */
+    align-items: center; /* Centers images horizontally */
 
+}
+
+.logosection img {
+    margin: 5px 0; /* Adds space between images */
+    width: 20px;
+    padding: 10px;
+}
+.footer {
+    background-color: black;
+    color: #d6d6d6;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  
+  .footer-section .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .footer-section .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #333;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
