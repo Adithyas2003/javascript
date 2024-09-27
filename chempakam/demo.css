@@ -294,3 +294,39 @@ header {
     margin: 20px 0; /* Space above and below the button */
 }
 
+.container4 {
+    padding: 20px;
+    background-color: #f8f9fa; 
+}
+
+.product1 {
+    max-width: 1200px; /* Set a max width */
+    margin: 0 auto; /* Center align */
+    text-align: center; /* Center text */
+}
+
+.product-slider1 {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 15px; /* Space between items */
+}
+
+.product-item {
+    background-color: #fff; /* White background for products */
+    border-radius: 8px; /* Rounded corners */
+    padding: 30px; /* Padding inside product item */
+}
+
+.product-item1 img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.product1 h1 {
+    color: grey; /* Heading color */
+}
+.productbtn1 {
+    text-align: center; /* Center text inside the div */
+    margin: 20px 0; /* Space above and below the button */
+}
+

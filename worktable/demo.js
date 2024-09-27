@@ -26,7 +26,14 @@ function display(){
         }
         edit_id.appendChild(edit_btn)
         t_row.appendChild(edit_id)
-
+        const del_id=document.createElement('td')
+        const del_btn=document.createElement('button')
+        del_btn.textContent='delete'
+        del_btn.onclick=function(){
+            delete_data(element.id)
+        }
+        del_id.appendChild(del_btn)
+        t_row.appendChild(del_id)
 
         t_var.appendChild(t_row)
     });
@@ -71,7 +78,14 @@ document.getElementById('editform').addEventListener('submit',function(event){
     display()
 
 })
-
+function delete_data(id){
+    d=d.filter(user=>{
+        if(user.id!=id){
+            return user
+        }
+    })
+    display()
+}
 
 
 
