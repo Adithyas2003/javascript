@@ -4,87 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./demo.html">
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4; /* Light background color */
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+}
 
-        .headerleft {
-            background-color: #250e0e; /* White background for the header */
-            padding: 10px 20px; /* Padding around the header */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        }
+.headerleft {
+    background-color: #250e0e; /* Dark header background */
+    padding: 10px 20px; /* Padding around the header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
 
-        .mainnavbar {
-            display: flex;
-            align-items: center; /* Align items vertically */
-            justify-content: space-between; /* Space between items */
-        }
+.mainnavbar {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between items */
+}
 
-        .logo img {
-            max-height: 50px; /* Limit logo height */
-        }
+.logo img {
+    max-height: 50px; /* Limit logo height */
+}
 
-        .nav-links {
-            display: flex;
-            align-items: center; /* Center items vertically */
-        }
+.nav-links {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow wrapping */
+}
 
-        .nav-links a {
-            margin: 0 15px; /* Space between links */
-            text-decoration: none; /* Remove underline */
-            color: #333; /* Dark text color */
-            transition: color 0.3s; /* Smooth color transition */
-        }
+.nav-links a {
+    margin: 0 15px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark text color */
+    transition: color 0.3s; /* Smooth color transition */
+}
 
-        .nav-links a:hover {
-            color: #007bff; /* Change color on hover */
-        }
+.nav-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
 
-        .searchbar {
-            display: flex;
-            align-items: center; /* Center the search bar elements */
-            margin-left: 20px; /* Space before search bar */
-        }
+.searchbar {
+    display: flex;
+    align-items: center; /* Center the search bar elements */
+    margin-left: 20px; /* Space before search bar */
+}
 
-        .searchbar input {
-            padding: 5px; /* Padding for the input */
-            border: 1px solid #ccc; /* Light border */
-            border-radius: 4px; /* Rounded corners */
-            margin-right: 5px; /* Space between input and icon */
-        }
+.searchbar input {
+    padding: 5px; /* Padding for the input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 5px; /* Space between input and icon */
+}
 
-        .search-icon {
-            width: 20px; /* Size of the search icon */
-            cursor: pointer; /* Change cursor on hover */
-        }
+.search-icon {
+    width: 20px; /* Size of the search icon */
+    cursor: pointer; /* Change cursor on hover */
+}
 
-        .facebooklogo {
-            display: flex; /* Display logos in a row */
-            margin-left: auto; /* Push to the right */
-        }
+.facebooklogo {
+    display: flex; /* Display logos in a row */
+    margin-left: auto; /* Push to the right */
+}
 
-        .facebooklogo img {
-            width: 25px; /* Size of social icons */
-            margin-left: 10px; /* Space between icons */
-        }
-        .containers {
+.facebooklogo img {
+    width: 25px; /* Size of social icons */
+    margin-left: 10px; /* Space between icons */
+}
+
+.containers {
     display: flex; /* Use flexbox for layout */
     justify-content: space-between; /* Space between containers */
     margin: 20px; /* Margin around the containers */
     max-width: 1200px; /* Limit the max width */
     margin: auto; /* Center the containers */
-    background-color: #fff; /* White background */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: white; /* White background */
     padding: 20px; /* Padding inside the containers */
+    flex-wrap: wrap; /* Allow wrapping */
 }
 
 .containers1,
@@ -95,16 +98,106 @@
 
 p {
     line-height: 1.6; /* Improve readability */
-    color: #333; /* Dark text color */
+    color: #130808; /* Dark text color */
     font-size: 16px; /* Base font size */
 }
 
+.containermain {
+    text-align: center;
+    padding: 50px;
+    background-color: peachpuff;
+    min-width: 300px; /* Minimum width for smaller screens */
+    min-height: 400px; /* Minimum height */
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+}
 
+.main-container {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.mainimg {
+    max-width: 300px; /* Set a max width for each container */
+    margin: 10px; /* Add some spacing between the containers */
+    text-align: center; /* Center the text inside the container */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: white;
+}
+
+.mainimg img {
+    width: 100px; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    font-size: 1.5em; /* Adjust heading size */
+    margin-bottom: 10px; /* Add space below heading */
+}
+
+.fiftyimg {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow images to wrap to the next line if needed */
+    padding: 80px;
+}
+
+.fiftyimg img {
+    margin: 10px; /* Add some spacing between images */
+    max-width: 100px; /* Control the size of images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack links on smaller screens */
+        align-items: flex-start; /* Align links to the start */
+    }
+
     .containers {
         flex-direction: column; /* Stack containers on smaller screens */
+        align-items: center; /* Center containers */
+    }
+
+    .main-container {
+        justify-content: center; /* Center items */
+    }
+
+    .mainimg {
+        max-width: 90%; /* Allow images to take more space */
+    }
+
+    .fiftyimg {
+        padding: 40px 0; /* Adjust padding for smaller screens */
+    }
+
+    .searchbar {
+        margin-left: 0; /* Remove margin on small screens */
+        margin-top: 10px; /* Add space on top */
     }
 }
+
+@media (max-width: 480px) {
+    .searchbar {
+        flex-direction: column; /* Stack search bar elements */
+        align-items: stretch; /* Stretch input to full width */
+    }
+
+    .searchbar input {
+        margin: 5px 0; /* Adjust margin for better spacing */
+        width: 100%; /* Full width for input */
+    }
+
+    .nav-links a {
+        margin: 10px 0; /* Add vertical spacing for stacked links */
+    }
+}
+
     </style>
 </head>
 <body>
@@ -159,6 +252,38 @@ p {
                 </p>
         </div>
     </div>
+    <div class="containermain">
+        <h1>Why Choose Us</h1>
+        <div class="main-container">
+            <div class="mainimg">
+                <img src="./image/our-story-img1.webp" alt="">
+                <h1>Lowest Price for Top Quality</h1>
+                <p>We use only top quality materials and the QA team manually checks every piece of work to ensure adherence to the highest standards before it reaches the customers. We do not compromise or negotiate on quality.</p>
+            </div>
+            <div class="mainimg">
+                <img src="./image/our-story-img2.webp" alt="">
+                <h1>Online Support</h1>
+                <p>Our customer service team is available on our Facebook page & Instagram. Same hour response is guaranteed during our working hours.</p>
+            </div>
+            <div class="mainimg">
+                <img src="./image/our-story-img3.webp" alt="">
+                <h1>Free Shipping</h1>
+                <p>Our Free Shipping offer is just one way we aim to make your fashion journey smoother, more affordable, and filled with the latest trends. We ship across India for free and to other countries with a fee.</p>
+            </div>
+        </div>
+    </div>
+    <div class="fifty">
+        <div class="fiftyimg">
+            <img src="./image/Capture3.PNG" alt="">
+            <img src="./image/Capture2.PNG" alt="">
+            <img src="./image/Capture1.PNG" alt="">
+            <img src="./image/Capture.PNG" alt="">
+        </div>
+    </div>
+    
+    <div class="footer">
+        <img src="./image/Capture5.PNG" alt="" srcset="">
+      </div>
 </body>
-
+<script src="demo.js"></script>
 </html>

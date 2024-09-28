@@ -251,34 +251,34 @@ body {
 }
 
 .products {
-    max-width: 1200px; /* Set a max width */
-    margin: 0 auto; /* Center align */
-    text-align: center; /* Center text */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    text-align: center; 
 }
 
 .product-slider {
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
-    gap: 15px; /* Space between items */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
 }
 
 .product-item {
-    background-color: #fff; /* White background for products */
-    border-radius: 8px; /* Rounded corners */
-    padding: 30px; /* Padding inside product item */
+    background-color: #fff; 
+    border-radius: 8px; 
+    padding: 30px; 
 }
 
 .product-item img {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto;
 }
 
 .products h1 {
-    color: grey; /* Heading color */
+    color: grey;
 }
 .productbtn {
-    text-align: center; /* Center text inside the div */
-    margin: 20px 0; /* Space above and below the button */
+    text-align: center; 
+    margin: 20px 0; 
 }
 
 .container4 {
@@ -317,7 +317,7 @@ body {
     margin: 20px 0; /* Space above and below the button */
 }
 .footer {
-    background-color: #0f0d0d; /* Light gray background */
+    /* background-color: #0f0d0d;  */
     padding: 20px 0; /* Top and bottom padding */
     display: flex;
     flex-wrap: wrap; /* Allows wrapping of footer sections */
@@ -327,10 +327,10 @@ body {
 }
 
 .footer-container {
-    max-width: 1200px; /* Limit the width */
+    max-width: 1200px; 
      margin: 0  auto; 
     width: 100%;
-    /* background-color: #1f1111; */
+   
     flex-direction:row;
     
 }
@@ -344,43 +344,43 @@ body {
 }
 
 .footer-section {
-    flex: 1; /* Flexibly grow sections */
-    min-width: 200px; /* Minimum width for responsiveness */
-    margin: 10px; /* Margin around sections */
+    flex: 1; 
+    min-width: 200px; 
+    margin: 10px; 
 }
 
 .footer-section h4 {
-    margin-bottom: 10px; /* Spacing for headings */
+    margin-bottom: 10px;
 
 }
 
 .footer-section ul {
-    list-style: none; /* Remove default list styles */
-    padding: 0; /* Remove padding */
+    list-style: none; 
+    padding: 0;
 }
 
 .footer-section ul li {
-    margin: 5px 0; /* Space between list items */
+    margin: 5px 0; 
 }
 
 .footer-section ul li a {
-    text-decoration: none; /* Remove underline */
-    color: #333; /* Dark text color */
-    transition: color 0.3s; /* Transition for hover effect */
+    text-decoration: none; 
+    color: #333; 
+    transition: color 0.3s; 
 }
 
 .footer-section ul li a:hover {
-    color: #007bff; /* Change color on hover */
+    color: #007bff; 
 }
 
 .logos {
-    display: flex; /* Display logos in a row */
-    flex-wrap: wrap; /* Allow wrapping */
-    /* justify-content: center;  */
-    align-items: center; /* Align logos vertically */
-    margin: 10px 0; /* Margin for spacing */
-    /* width: 2px;
-    height: 2px; */
+    display: flex; 
+    flex-wrap: wrap;
+  
+    align-items: center; 
+    margin: 10px 0; 
+    
+
 }
 .logos img{
     width: 20px;
@@ -388,18 +388,18 @@ body {
     padding: 10px;
 }
 .footer-logo {
-    max-width: 150px; /* Limit logo size */
-    margin-bottom: 20px; /* Space below the logo */
+    max-width: 150px; 
+    margin-bottom: 20px; 
 }
 
 .social-icons img {
-    width: 30px; /* Set size for social icons */
-    margin: 0 5px; /* Space between icons */
+    width: 30px; 
+    margin: 0 5px;
 }
 
 .footer-bottom {
-    text-align: center; /* Center the bottom text */
-    margin-top: 20px; /* Space above the bottom text */
-    font-size: 14px; /* Smaller font size */
-    color: #666; /* Gray color */
+    text-align: center; 
+    margin-top: 20px;
+    font-size: 14px; 
+    /* color: #666;  */
 }

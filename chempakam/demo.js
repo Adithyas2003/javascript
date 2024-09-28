@@ -47,3 +47,30 @@ function search() {
         productSlider.scrollLeft = scrollLeft - walk;
     });
 
+// script.js
+
+// Function to toggle the visibility of the footer
+function toggleFooter() {
+    const footer = document.querySelector('.footer');
+    if (footer.style.display === 'none' || footer.style.display === '') {
+        footer.style.display = 'block'; // Show the footer
+    } else {
+        footer.style.display = 'none'; // Hide the footer
+    }
+}
+
+// Event listener for a button to toggle footer visibility
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.createElement('button');
+    toggleButton.innerText = 'Toggle Footer';
+    toggleButton.style.margin = '20px';
+    
+    // Add event listener to the button
+    toggleButton.addEventListener('click', toggleFooter);
+
+    // Append the button to the body or another suitable element
+    document.body.insertBefore(toggleButton, document.body.firstChild);
+});
+function openMap() {
+    window.open("https://www.google.com/maps/search/?api=1&query=Kureekkadu,+Ernakulam,+Kerala,+India", "_blank");
+}

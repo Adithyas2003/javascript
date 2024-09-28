@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./demo.html">
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e2d8d8; /* Light background color */
+}
+
+.headerleft {
+    background-color: #1d1b1b; /* White background for the header */
+    padding: 10px 20px; /* Padding around the header */
+    box-shadow: 0 2px 5px rgba(29, 28, 28, 0.1); /* Subtle shadow */
+}
+
+.mainnavbar {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between items */
+}
+
+.logo img {
+    max-height: 50px; /* Limit logo height */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    color: #e2d8d8;
+}
+
+.nav-links a {
+    margin: 0 15px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    color: #eee9e9; /* Dark text color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-links a:hover {
+    color: #bec0c2; /* Change color on hover */
+}
+
+.searchbar {
+    display: flex;
+    align-items: center; /* Center the search bar elements */
+    margin-left: 20px; /* Space before search bar */
+}
+
+.searchbar input {
+    padding: 5px; /* Padding for the input */
+    border: 1px solid #f5eaea; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 5px; /* Space between input and icon */
+}
+
+.search-icon {
+    width: 20px; /* Size of the search icon */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.facebooklogo {
+    display: flex; /* Display logos in a row */
+    margin-left: auto; /* Push to the right */
+}
+
+.facebooklogo img {
+    width: 25px; /* Size of social icons */
+    margin-left: 10px; /* Space between icons */
+}
+
+.facebooklogo img {
+    width: 30px; 
+    height: auto; 
+    object-fit: contain; 
+}
+.containers {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-around; /* Space the items evenly */
+    margin: 20px; /* Margin around the containers */
+}
+
+.con1, .con2 {
+    flex: 1; /* Allow each container to grow equally */
+    margin: 10px; /* Margin between the containers */
+    padding: 20px; /* Padding inside each container */
+    /* background-color: white; Optional: Background color for visibility */
+    text-align: center; /* Center text inside each container */
+    /* border: 1px solid #ccc;  */
+    /* border-radius: 8px;  */
+}
+.containers button{
+    width: 80px;
+    height: 40px;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack links on smaller screens */
+        align-items: flex-start; /* Align links to the start */
+    }
+
+    .containers {
+        flex-direction: column; /* Stack containers on smaller screens */
+        align-items: center; /* Center containers */
+    }
+
+    .main-container {
+        justify-content: center; /* Center items */
+    }
+
+    .mainimg {
+        max-width: 90%; /* Allow images to take more space */
+    }
+
+    .fiftyimg {
+        padding: 40px 0; /* Adjust padding for smaller screens */
+    }
+
+    .searchbar {
+        margin-left: 0; /* Remove margin on small screens */
+        margin-top: 10px; /* Add space on top */
+    }
+}
+
+@media (max-width: 480px) {
+    .searchbar {
+        flex-direction: column; /* Stack search bar elements */
+        align-items: stretch; /* Stretch input to full width */
+    }
+
+    .searchbar input {
+        margin: 5px 0; /* Adjust margin for better spacing */
+        width: 100%; /* Full width for input */
+    }
+
+    .nav-links a {
+        margin: 10px 0; /* Add vertical spacing for stacked links */
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headerleft">
+           
+            <div class="mainnavbar">
+                <div class="logo">
+                    <img src="./image/logo.png" alt="">
+                </div>
+                <div class="nav-links">
+                    <a href="#">Shop now
+                        <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <a href="demo.js">Reviews</a>
+                    <a href="contactus.html">contact us</a>
+                    
+                    <a href="aboutus.html">about Us</a>
+                    <div class="searchbar">
+                        <span class="material-symbols-outlined">product code</span>
+                        <input type="text" placeholder="">
+                        <img src="./image/search-interface-symbol.png" alt="Search" class="search-icon">
+                    </div>
+                    
+                    
+                    
+                <div class="facebooklogo">
+                
+                        <img src="./image/facebook.png" alt="">
+                        <img src="./image/linkedin.png" alt="">
+                        <img src="./image/heart.png" alt="">
+                        <img src="./image/shopping-bag.png" alt="">
+                </div>
+               
+                    
+               
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <img src="./image/Capture8.PNG" alt="">
+        </div>
+        <div class="containers">
+            <div class="cont">
+                <div class="con1">
+                    <img src="./image/whatsapp.png" alt="">
+                    <h6>9:00 AM – 5:30 PM (INDIA)</h6>
+                    <p>Sunday Holiday</p>
+                    <button>click here</button>
+                </div>
+                <div class="con2">
+                    <img src="./image/facebook (1).png" alt="">
+                    <h6>9:00 AM – 10:00 PM (INDIA)</h6>
+                    <p>All Days</p>
+                    <button>click here</button>
+    
+                </div>
+            </div>
+            <div class="conta">
+                <h5>Shop Address</h5>
+                <h6>
+                        Chempakam, 1st Floor, K Mall, East Fort Gate, Hill Palace Road, Thripunithura, Ernakulam, Kerala, India, 682301
+                   
+                </h6>
+                <div class="conta1">
+                    
+                    <a href="https://maps.google.com/?q=Chempakam,+1st+Floor,+K+Mall,+East+Fort+Gate,+Hill+Palace+Road,+Thripunithura,+Ernakulam,+Kerala,+India,+682301" target="_blank" style="color: inherit; text-decoration: none;"> </a>
+                </div>
+            </div>
+            
+            </div>
+           
+    </header>
+    <footer>
+        <img src="./image/Capture5.PNG" alt="" srcset="">
+    </footer>
+    
+</body>
+</html>
