@@ -21,8 +21,8 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50;
-    color: white;
+    background-color:whitesmoke;
+    color:black;
 }
 
 form {
@@ -39,7 +39,7 @@ label {
 }
 
 input {
-    width: 100%;
+    width: 20%;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -58,3 +58,4 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
