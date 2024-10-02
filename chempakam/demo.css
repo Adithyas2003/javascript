@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
 }
 
 .headerleft {
-    background-color: #131111; /* White background for the header */
+    background-color: #131111; /* Header background color */
     padding: 10px 20px; /* Padding around the header */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
@@ -28,13 +28,13 @@ body {
 .nav-links {
     display: flex;
     align-items: center; /* Center items vertically */
-    color: #e2d8d8;
+    color: white;
 }
 
 .nav-links a {
     margin: 0 15px; /* Space between links */
     text-decoration: none; /* Remove underline */
-    color: #eee9e9; /* Dark text color */
+    color: #eee9e9; /* Text color */
     transition: color 0.3s; /* Smooth color transition */
 }
 
@@ -44,7 +44,7 @@ body {
 
 .searchbar {
     display: flex;
-    align-items: center; /* Center the search bar elements */
+    align-items: center; /* Center search bar elements */
     margin-left: 20px; /* Space before search bar */
 }
 
@@ -66,18 +66,56 @@ body {
 }
 
 .facebooklogo img {
-    width: 25px; /* Size of social icons */
-    margin-left: 10px; /* Space between icons */
-}
-
-.facebooklogo img {
     width: 30px; 
     height: auto; 
     object-fit: contain; 
+    margin-left: 10px; /* Space between icons */
 }
-.body22 img{
-    width: 100%;
+
+.body2 {
+    position: relative; /* Positioning context for overlay */
 }
+
+.body22 {
+    position: relative; /* Position relative to position overlay */
+    overflow: hidden; /* Hide overflow if necessary */
+}
+
+.body2img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.overlay-content {
+    position: absolute; 
+    top: 50%; /* Center the overlay vertically */
+    left: 50%; /* Center the overlay horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+.overlay-content h1 {
+    font-size: 32px; /* Default size */
+    margin-bottom: 10px; 
+}
+
+.overlay-content .cta-button {
+    padding: 10px 20px; 
+    color: white; 
+    background-color: rgb(255, 87, 34); 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin: 5px; /* Space between buttons */
+}
+
+.overlay-content .cta-button:hover {
+    background-color: rgb(255, 112, 67); 
+}
+
 .container2 {
     padding: 20px;
     background-color: #f8f9fa;
@@ -113,32 +151,7 @@ body {
     margin-top: 10px;
     font-weight: bold;
 }
-.overlay-content {
-    position: absolute; 
-    top: 80%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
-    text-align: center; 
-    padding: 20px; 
-    /* background-color: rgba(0, 0, 0, 0.5);  */
-    border-radius: 10px;
-}
 
-.cta-button {
-    padding: 10px 20px; 
-    color: white; 
-    background-color: rgb(255, 87, 34); 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
-    margin-top: 10px; 
-}
-
-.cta-button:hover {
-    background-color: rgb(255, 112, 67); 
-}
 .container3 {
     padding: 20px;
     background-color: #f8f9fa; 
@@ -168,8 +181,9 @@ body {
 }
 
 .products h1 {
-    color: grey; /* Heading color */
+    color: white; /* Heading color */
 }
+
 .productbtn {
     text-align: center; /* Center text inside the div */
     margin: 20px 0; /* Space above and below the button */
@@ -179,106 +193,10 @@ body {
     padding: 10px 20px; /* Padding for the button */
     background-color: rgb(90, 88, 87); /* Button color */
     color: rgb(17, 15, 15); /* Text color */
-    border: black; /* Remove border */
+    border: none; /* Remove border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor */
     transition: background-color 0.3s; 
-}
-.container2 {
-    padding: 20px;
-    background-color: #f8f9fa;
-}
-
-.categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.category-item {
-    text-align: center;
-    flex: 1;
-    min-width: 150px;
-}
-
-.category-item .circle {
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto;
-    background-color: #fff;
-}
-
-.category-item .circle img {
-    width: 100%;
-    height: auto;
-}
-
-.category-item p {
-    margin-top: 10px;
-    font-weight: bold;
-}
-.overlay-content {
-    position: absolute; 
-    top: 80%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
-    text-align: center; 
-    padding: 20px; 
-    /* background-color: rgba(0, 0, 0, 0.5);  */
-    border-radius: 10px;
-}
-
-.cta-button {
-    padding: 10px 20px; 
-    color: white; 
-    background-color: rgb(255, 87, 34); 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
-    margin-top: 10px; 
-}
-
-.cta-button:hover {
-    background-color: rgb(255, 112, 67); 
-}
-.container3 {
-    padding: 20px;
-    background-color: #f8f9fa; 
-}
-
-.products {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    text-align: center; 
-}
-
-.product-slider {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 15px;
-}
-
-.product-item {
-    background-color: #fff; 
-    border-radius: 8px; 
-    padding: 30px; 
-}
-
-.product-item img {
-    width: 100%; 
-    height: auto;
-}
-
-.products h1 {
-    color: grey;
-}
-.productbtn {
-    text-align: center; 
-    margin: 20px 0; 
 }
 
 .container4 {
@@ -310,37 +228,30 @@ body {
 }
 
 .products1 h1 {
-    color: grey; /* Heading color */
+    color: rgb(238, 235, 235); /* Heading color */
 }
+
 .productbtn1 {
     text-align: center; /* Center text inside the div */
     margin: 20px 0; /* Space above and below the button */
 }
+
 .footer {
-    /* background-color: #0f0d0d;  */
+    width: 100%; /* Full width */
+    background-color: #131111; /* Footer background color */
     padding: 20px 0; /* Top and bottom padding */
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping of footer sections */
-    justify-content: space-around; /* Evenly space sections */
-    align-items: flex-start; /* Align items to the top */
-   
+    text-align: center; /* Center align the content */
 }
 
 .footer-container {
     max-width: 1200px; 
-     margin: 0  auto; 
+    margin: 0 auto; 
     width: 100%;
-   
-    flex-direction:row;
-    
 }
 
-.footer-container img{
-    width: 100%;
-    height: auto;
-}
-.footer-container h4{
-    flex-direction:row;
+.footer-content img {
+    max-width: 100%; 
+    height: auto; 
 }
 
 .footer-section {
@@ -351,7 +262,6 @@ body {
 
 .footer-section h4 {
     margin-bottom: 10px;
-
 }
 
 .footer-section ul {
@@ -365,7 +275,7 @@ body {
 
 .footer-section ul li a {
     text-decoration: none; 
-    color: #333; 
+    color: #f7e7e7; 
     transition: color 0.3s; 
 }
 
@@ -376,17 +286,16 @@ body {
 .logos {
     display: flex; 
     flex-wrap: wrap;
-  
     align-items: center; 
     margin: 10px 0; 
-    
-
 }
-.logos img{
+
+.logos img {
     width: 20px;
     height: 20px;
     padding: 10px;
 }
+
 .footer-logo {
     max-width: 150px; 
     margin-bottom: 20px; 
@@ -401,5 +310,62 @@ body {
     text-align: center; 
     margin-top: 20px;
     font-size: 14px; 
-    /* color: #666;  */
+}
+
+@media (max-width: 768px) {
+    .overlay-content h1 {
+        font-size: 24px; /* Adjust size for smaller screens */
+    }
+    
+    .overlay-content .cta-button {
+        padding: 8px 16px;    
+        font-size: 14px; 
+    }
+    
+    .categories {
+        flex-wrap: nowrap; /* Prevent wrapping */
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+
+    .category-item {
+        flex: 0 0 50%; /* Each item takes up 50% of the container */
+        /* Adjusted to ensure only 2 circles are displayed */
+
+
+    }
+
+
+    .footer img {
+        max-width: 100%; /* Make footer images responsive */
+        height: auto; /* Maintain aspect ratio */
+        padding: 10px 0; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay-content h1 {
+        font-size: 20px; 
+    }
+
+    .overlay-content .cta-button {
+        padding: 6px 12px;     
+        font-size: 12px;       
+    }
+
+
+
+    .categories {
+        flex-wrap: nowrap; /* Prevent wrapping */
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+
+    .category-item {
+        flex: 0 0 50%; /* Each item takes up 50% of the container */
+        /* Adjusted to ensure only 2 circles are displayed */
+    }
+    .footer img {
+        max-width: 100%; /* Ensure footer images are fully responsive */
+        height: auto; /* Maintain aspect ratio */
+        padding: 10px 0; /* Further adjustment for mobile */
+    }
 }

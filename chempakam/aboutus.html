@@ -4,286 +4,342 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./demo.html">
+    <link rel="stylesheet" href="style.css">
     <style>
- * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Light background color */
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
 
-.headerleft {
-    background-color: #250e0e; /* Dark header background */
-    padding: 10px 20px; /* Padding around the header */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
+        header {
+            background-color: #250e0e;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.mainnavbar {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping for small screens */
-    align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Space between items */
-}
+        .mainnavbar {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-.logo img {
-    max-height: 50px; /* Limit logo height */
-}
+        .logo img {
+            max-height: 50px;
+        }
 
-.nav-links {
-    display: flex;
-    align-items: center; /* Center items vertically */
-    flex-wrap: wrap; /* Allow wrapping */
-}
+        .nav-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
-.nav-links a {
-    margin: 0 15px; /* Space between links */
-    text-decoration: none; /* Remove underline */
-    color: #333; /* Dark text color */
-    transition: color 0.3s; /* Smooth color transition */
-}
+        .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
 
-.nav-links a:hover {
-    color: #007bff; /* Change color on hover */
-}
+        .nav-links a:hover {
+            color: #007bff;
+        }
 
-.searchbar {
-    display: flex;
-    align-items: center; /* Center the search bar elements */
-    margin-left: 20px; /* Space before search bar */
-}
+        .searchbar {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
 
-.searchbar input {
-    padding: 5px; /* Padding for the input */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 4px; /* Rounded corners */
-    margin-right: 5px; /* Space between input and icon */
-}
+        .searchbar input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 5px;
+            width: 200px; /* Set a default width for the input */
+        }
 
-.search-icon {
-    width: 20px; /* Size of the search icon */
-    cursor: pointer; /* Change cursor on hover */
-}
+        .search-icon {
+            width: 20px;
+            cursor: pointer;
+        }
 
-.facebooklogo {
-    display: flex; /* Display logos in a row */
-    margin-left: auto; /* Push to the right */
-}
+        .facebooklogo {
+            display: flex;
+            margin-left: auto;
+        }
 
-.facebooklogo img {
-    width: 25px; /* Size of social icons */
-    margin-left: 10px; /* Space between icons */
-}
+        .facebooklogo img {
+            width: 25px;
+            margin-left: 10px;
+        }
 
-.containers {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between containers */
-    margin: 20px; /* Margin around the containers */
-    max-width: 1200px; /* Limit the max width */
-    margin: auto; /* Center the containers */
-    background-color: white; /* White background */
-    padding: 20px; /* Padding inside the containers */
-    flex-wrap: wrap; /* Allow wrapping */
-}
+        .containers {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto;
+            max-width: 1200px;
+            background-color: white;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
 
-.containers1,
-.containers2 {
-    flex: 1; /* Allow both containers to grow equally */
-    margin: 10px; /* Margin between the containers */
-}
+        .containers1,
+        .containers2 {
+            flex: 1;
+            margin: 10px;
+            min-width: 300px;
+        }
 
-p {
-    line-height: 1.6; /* Improve readability */
-    color: #130808; /* Dark text color */
-    font-size: 16px; /* Base font size */
-}
+        p {
+            line-height: 1.6;
+            color: #130808;
+            font-size: 16px;
+        }
 
-.containermain {
-    text-align: center;
-    padding: 50px;
-    background-color: peachpuff;
-    min-width: 300px; /* Minimum width for smaller screens */
-    min-height: 400px; /* Minimum height */
-    width: 100%;
-    margin: 0 auto; /* Center the container */
-}
+        .containermain {
+            text-align: center;
+            padding: 50px;
+            background-color: peachpuff;
+            min-width: 300px;
+            min-height: 400px;
+            width: 100%;
+            margin: 0 auto;
+        }
 
-.main-container {
-    display: flex;
-    flex-direction: row; /* Arrange items in a row */
-    justify-content: space-around; /* Space items evenly */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-}
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
 
-.mainimg {
-    max-width: 300px; /* Set a max width for each container */
-    margin: 10px; /* Add some spacing between the containers */
-    text-align: center; /* Center the text inside the container */
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Arrange children vertically */
-    align-items: center; /* Center items horizontally */
-    background-color: white;
-}
+        .mainimg {
+            max-width: 300px;
+            margin: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+        }
 
-.mainimg img {
-    width: 100px; /* Fixed width for the image */
-    height: auto; /* Maintain aspect ratio */
-}
+        .mainimg img {
+            width: 100%;
+            height: auto;
+        }
 
-h1 {
-    font-size: 1.5em; /* Adjust heading size */
-    margin-bottom: 10px; /* Add space below heading */
-}
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
 
-.fiftyimg {
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center items horizontally */
-    flex-wrap: wrap; /* Allow images to wrap to the next line if needed */
-    padding: 80px;
-}
+        .fiftyimg {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 80px 0;
+        }
 
-.fiftyimg img {
-    margin: 10px; /* Add some spacing between images */
-    max-width: 100px; /* Control the size of images */
-    height: auto; /* Maintain aspect ratio */
-}
+        .fiftyimg img {
+            margin: 10px;
+            max-width: 100px;
+            height: auto;
+        }
 
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column; 
-        align-items: flex-start; 
-    }
+        /* Dropdown Styles */
+        .dropdown {
+            position: relative;
+        }
 
-    .containers {
-        flex-direction: column; 
-        align-items: center; 
-    }
+        .dropbtn {
+            background-color: transparent;
+            border: none;
+            color: #333;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
 
-    .main-container {
-        justify-content: center; 
-    }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
 
-    .mainimg {
-        max-width: 90%; 
-    }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 
-    .fiftyimg {
-        padding: 40px 0; 
-    }
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
 
-    .searchbar {
-        margin-left: 0; /* Remove margin on small screens */
-        margin-top: 10px; /* Add space on top */
-    }
-}
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
 
-@media (max-width: 480px) {
-    .searchbar {
-        flex-direction: column; /* Stack search bar elements */
-        align-items: stretch; /* Stretch input to full width */
-    }
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                align-items: flex-start;
+            }
 
-    .searchbar input {
-        margin: 5px 0; /* Adjust margin for better spacing */
-        width: 100%; /* Full width for input */
-    }
+            .containers {
+                flex-direction: column;
+                align-items: center;
+            }
 
-    .nav-links a {
-        margin: 10px 0; /* Add vertical spacing for stacked links */
-    }
-}
+            .main-container {
+                justify-content: center;
+            }
 
+            .mainimg {
+                max-width: 90%;
+            }
+
+            .fiftyimg {
+                padding: 40px 0;
+            }
+
+            .searchbar {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .searchbar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .searchbar input {
+                margin: 5px 0;
+                width: 100%;
+            }
+
+            .nav-links a {
+                margin: 10px 0;
+            }
+
+            .dropdown-content {
+                min-width: 100%;
+            }
+        }
+
+        footer {
+            width: 100%;
+            background-color: #250e0e;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer img {
+            max-width: 100%;
+            height: auto;
+            padding: 10px 0;
+        }
     </style>
 </head>
 <body>
-    <div class="headerleft">
+    <header>
         <div class="mainnavbar">
             <div class="logo">
-                <img src="./image/logo.png" alt="">
+                <img src="./image/logo.png" alt="Logo">
             </div>
             <div class="nav-links">
-                <a href="#">Shop now
-                    <span class="dropdown-arrow">▼</span>
-                </a>
-                <a href="demo.html">home</a>
+                <a href="#">Shop now <span class="dropdown-arrow">▼</span></a>
+                <div class="dropdown">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Products</button>
+                    <div class="dropdown-content">
+                        <a href="#">Clothing</a>
+                        <a href="#">Accessories</a>
+                        <a href="#">Footwear</a>
+                    </div>
+                </div>
+                <a href="demo.html">Home</a>
                 <a href="#">Reviews</a>
                 <a href="#">About us</a>
                 <a href="#">Contact us</a>
                 <div class="searchbar">
-                    <span class="material-symbols-outlined">product code</span>
-                    <input type="text" placeholder="Search...">
+                    <input type="text" placeholder="Search..." aria-label="Search">
                     <img src="./image/search-interface-symbol.png" alt="Search" class="search-icon">
                 </div>
                 <div class="facebooklogo">
-                    <img src="./image/facebook.png" alt="">
-                    <img src="./image/linkedin.png" alt="">
-                    <img src="./image/heart.png" alt="">
-                    <img src="./image/shopping-bag.png" alt="">
+                    <img src="./image/facebook.png" alt="Facebook">
+                    <img src="./image/linkedin.png" alt="LinkedIn">
+                    <img src="./image/heart.png" alt="Favorites">
+                    <img src="./image/shopping-bag.png" alt="Shopping Bag">
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container1">
-        <img src="./image/Screenshot from 2024-09-27 17-23-51.png" alt="">
-    </div>
-    <div class="containers">
-        <div class="containers1">
-            <p>
+    </header>
 
-                Driven by passion, we have established ourselves as a prominent and preferred online seller of women clothing in the region. With our own production facilities and in house design team, we create innovative and unique products, at affordable prices.
-                
-                Customers recognize us for the simplicity & elegance of our materials and unmatched service quality.
-                
-                We are flexible for everything but quality. The QA team manually checks every piece of work and ensures adherence to the highest standards before it reaches the customers. We do not compromise or negotiate on quality.
-                </p>
+    <div class="container1">
+        <img src="./image/Screenshot from 2024-09-27 17-23-51.png" alt="Main Image">
+    </div>
+    
+    <section class="containers">
+        <div class="containers1">
+            <p>Driven by passion, we have established ourselves as a prominent and preferred online seller of women's clothing in the region. With our own production facilities and in-house design team, we create innovative and unique products at affordable prices. Customers recognize us for the simplicity & elegance of our materials and unmatched service quality.</p>
         </div>
         <div class="containers2">
-            <p>
-
-                Chempakam respects and welcomes our clients’ creativity. You like to have your ideas and dreams transformed into your clothing; you are at the right place. Our designers can help you develop or give finishing touches to your ideas and have it tailored your way.
-                
-                We are committed to respond to all queries in a prompt and professional manner. Same hour response is guaranteed, if not within the quarter during our working hours.
-                
-                We ship across India for free and to other countries with a fee.
-                </p>
+            <p>Chempakam respects and welcomes our clients’ creativity. You like to have your ideas and dreams transformed into your clothing; you are at the right place. Our designers can help you develop or give finishing touches to your ideas and have it tailored your way. We ship across India for free and to other countries with a fee.</p>
         </div>
-    </div>
-    <div class="containermain">
+    </section>
+
+    <section class="containermain">
         <h1>Why Choose Us</h1>
         <div class="main-container">
             <div class="mainimg">
-                <img src="./image/our-story-img1.webp" alt="">
+                <img src="./image/our-story-img1.webp" alt="Lowest Price for Top Quality">
                 <h1>Lowest Price for Top Quality</h1>
-                <p>We use only top quality materials and the QA team manually checks every piece of work to ensure adherence to the highest standards before it reaches the customers. We do not compromise or negotiate on quality.</p>
+                <p>We use only top quality materials and the QA team manually checks every piece of work to ensure adherence to the highest standards before it reaches the customers.</p>
             </div>
             <div class="mainimg">
-                <img src="./image/our-story-img2.webp" alt="">
+                <img src="./image/our-story-img2.webp" alt="Online Support">
                 <h1>Online Support</h1>
                 <p>Our customer service team is available on our Facebook page & Instagram. Same hour response is guaranteed during our working hours.</p>
             </div>
             <div class="mainimg">
-                <img src="./image/our-story-img3.webp" alt="">
+                <img src="./image/our-story-img3.webp" alt="Free Shipping">
                 <h1>Free Shipping</h1>
-                <p>Our Free Shipping offer is just one way we aim to make your fashion journey smoother, more affordable, and filled with the latest trends. We ship across India for free and to other countries with a fee.</p>
+                <p>Our Free Shipping offer is just one way we aim to make your fashion journey smoother and more affordable. We ship across India for free and to other countries with a fee.</p>
             </div>
         </div>
-    </div>
-    <div class="fifty">
+    </section>
+
+    <section class="fifty">
         <div class="fiftyimg">
-            <img src="./image/Capture3.PNG" alt="">
-            <img src="./image/Capture2.PNG" alt="">
-            <img src="./image/Capture1.PNG" alt="">
-            <img src="./image/Capture.PNG" alt="">
+            <img src="./image/Capture3.PNG" alt="Capture 3">
+            <img src="./image/Capture2.PNG" alt="Capture 2">
+            <img src="./image/Capture1.PNG" alt="Capture 1">
+            <img src="./image/Capture.PNG" alt="Capture">
         </div>
-    </div>
+    </section>
+
+    <footer>
+        <img src="./image/Capture5.PNG" alt="Footer Image">
+    </footer>
     
-    <div class="footer">
-        <img src="./image/Capture5.PNG" alt="" srcset="">
-      </div>
+    <script src="demo.js"></script>
 </body>
-<script src="demo.js"></script>
 </html>
+
+
+

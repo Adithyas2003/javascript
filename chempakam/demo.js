@@ -74,3 +74,20 @@ document.addEventListener('DOMContentLoaded', () => {
 function openMap() {
     window.open("https://www.google.com/maps/search/?api=1&query=Kureekkadu,+Ernakulam,+Kerala,+India", "_blank");
 }
+const scrollLeftBtn = document.getElementById('scroll-left');
+const scrollRightBtn = document.getElementById('scroll-right');
+const slider = document.querySelector('.category-slider');
+
+scrollLeftBtn.addEventListener('click', () => {
+    slider.scrollBy({
+        left: -slider.clientWidth, // Scroll left by the width of the visible area
+        behavior: 'smooth'
+    });
+});
+
+scrollRightBtn.addEventListener('click', () => {
+    slider.scrollBy({
+        left: slider.clientWidth, // Scroll right by the width of the visible area
+        behavior: 'smooth'
+    });
+});
