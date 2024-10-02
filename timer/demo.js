@@ -1,12 +1,15 @@
 let countdownInterval;
 let timeLeft = 59; 
 
+
 const display = document.getElementById('display');
 const startButton = document.getElementById('start');
 const endButton = document.getElementById('end');
 
+
 startButton.addEventListener('click', startCountdown);
 endButton.addEventListener('click', endCountdown);
+
 
 function startCountdown() {
     if (!countdownInterval) {
@@ -27,6 +30,7 @@ function endCountdown() {
     countdownInterval = null;
     timeLeft = 0; 
     updateDisplay();
+    
 }
 
 function updateDisplay() {
