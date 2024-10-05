@@ -102,6 +102,59 @@ body {
     width: 80px;
     height: 40px;
 }
+.footer{
+    width:100%;
+    height:auto;
+    background-color: rgba(23,22,21,255);
+    display: flex;
+    flex-wrap: wrap;
+}
+.ftr1{
+    width:35vw;
+    height:50vh;
+    background-color:black;
+}
+.ftr1 img{
+    height:100%;
+    width:100%;
+}
+.ftr2{
+    background-color: rgba(23,22,21,255);
+    color: white;
+    width: 40vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 30px);
+    padding-left: 40px;
+    padding-top: 30px;
+    font-size: 15px;
+}
+.ftr3{
+    color: WHITE;
+    margin-top: 30px;
+    font-size: 13px;
+}
+.ftr3c2{
+    margin-top: 30px;
+    font-size: 13px;
+}
+.ftr3c2 img{
+    width:20px;
+}
+.ftr3c3{
+    margin-top: 10px;
+    font-size: 13px;
+}
+.ftr3c3 img{
+    width:20px;
+}
+.ftr3c4{
+    margin-top: 10px;
+    font-size: 13px;
+}
+.ftr3c4 img{
+    width:20px;
+}
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column; /* Stack links on smaller screens */
@@ -246,9 +299,38 @@ body {
             </div>
            
     </header>
-    <footer>
-        <img src="./image/Capture5.PNG" alt="" srcset="">
-    </footer>
+    <div class="footer">
+        <div class="ftr1"><img src="./image/Screenshot from 2024-10-05 11-20-09.png" alt=""></div>
+        <div class="ftr2">
+            <div class="fchild1"><b>SOLUTION</b></div>
+            <div class="fchild2"><B>ABOUT US</B></div>
+            <div class="fchild5"></div>
+            <div class="fchild5"></div>
+            <div class="fchild3">my account</div>
+            <div class="fchild4">contact us</div>
+            <div class="fchild5">Track Your Order</div>
+            <div class="fchild5">Terms & Conditions</div>
+            <div class="fchild5">Order History</div>
+            <div class="fchild5">Privacy Policy</div>
+            <div class="fchild5">Payment Methods</div>
+            <div class="fchild5">Return Policy</div>
+            <div class="fchild5">Privacy Policy</div>
+            <div class="fchild5">Site Map</div>  
+        </div>
+        <div class="ftr3">
+            <div class="ftr3c1"><b>CONTACT US</b></div>
+            <div class="ftr3c2"><img src="./image/1216844.png" alt="">  Kureekkadu, Ernakulam, Kerala</div>
+            <div class="ftr3c3"><img src="./image/831360p.png" alt=""> +91-86065 70657</div>
+            <div class="ftr3c4"><img src="./image/Screenshot from 2024-10-05 11-17-23.png" alt=""> Mon - Sat / 9:00AM - 6:00PM</div>
+        </div>
+      </div>
     
-</body>
-</html>
+    
+    
+              <!-- <div class="footer">
+                <img src="./image/Capture5.PNG" alt="" srcset="">
+              </div>
+               -->
+          
+          </body>
+          </html>
