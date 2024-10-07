@@ -31,7 +31,6 @@ body {
 
 .menu img {
     max-height: 50px; 
-    margin-left: 20px; 
 }
 
 .searchbar.container {
@@ -155,8 +154,216 @@ button {
     cursor: pointer; 
 }
 
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.con1, .con2 {
+    display: flex;
+    flex-direction: column; /* Stack items vertically in con2 */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%; /* Set same width for both containers */
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.con1 {
+    display: flex; /* Use flexbox for con1 to arrange image and heading */
+    align-items: center; /* Center items vertically */
+}
+
+.imgcontainer {
+    display: flex; /* Flexbox for images in con2 */
+    justify-content: center; /* Center images */
+    margin-bottom: 20px; /* Space below images in con2 */
+}
+
+.imgcontainer img {
+    max-width: 100%; /* Adjust size for the images */
+    height: auto;
+    border-radius: 8px; /* Optional: add rounded corners */
+    margin: 0 5px; /* Space between images */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0; /* Remove margin for better alignment */
+    text-align: left; /* Align heading to the left for con1 */
+}
+
+h1 {
+    color: white;
+    margin-left: 100px;
+}
+
+.container2 {
+    margin: 20px;
+    background-color: white; /* Optional: add a background color */
+    border: 1px solid #ccc; /* Optional: add a border */
+    border-radius: 8px; /* Optional: add rounded corners */
+    padding: 20px; /* Add some padding */
+}
+
+.container2 h1 {
+    text-align: center; /* Center the main heading */
+    margin-bottom: 20px; /* Space below the main heading */
+}
+
+.container2img {
+    display: flex; /* Use flexbox for the image and heading */
+    align-items: center; /* Center items vertically */
+}
+
+.imgcontainer {
+    margin-right: 20px; /* Space between image and h2 */
+}
+
+.imgcontainer img {
+    max-width: 100px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.container2img h2 {
+    font-size: 1.5em; /* Adjust font size */
+    margin: 0; /* Remove margin for better alignment */
+    text-align: left; /* Align text to the left */
+}
+
+.container4 {
+    background-color: black; /* Background color for contrast */
+    padding: 20px; /* Padding around the container */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center the heading */
+}
+
+.container4 h1 {
+    color: white; /* Heading color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.fourcon {
+    background-color: rgb(5, 5, 8); /* Background color for each item */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px; /* Space between items */
+    padding: 15px; /* Padding inside each item */
+    width: calc(25% - 40px); /* Width of each item, adjust for margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: inline-block; /* Make items inline for a row layout */
+}
+
+.fourcon img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for images */
+}
+.container5 {
+    background-color: black; /* Background color for contrast */
+    padding: 20px; /* Padding around the container */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center the heading */
+    margin: 20px; /* Margin around the container */
+}
+
+.container5 h1 {
+    color: black; /* Heading color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.con5 {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+}
+
+.con5-1, .con5-2 {
+    flex: 1; /* Allow items to take equal space */
+    margin: 10px; /* Space between items */
+    background-color: black; /* Optional: background color for items */
+    border-radius: 8px; /* Rounded corners for items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.con5 img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for images */
+}
+.container6 {
+    background-color:black; /* Background color for contrast */
+    padding: 20px; /* Padding around the container */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center the content */
+    margin: 20px; /* Margin around the container */
+}
+
+.con6img img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: 300px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for images */
+}
+.container7 {
+    background-color: black; /* Background color for contrast */
+    padding: 20px; /* Padding around the container */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center the text and image */
+    margin: 20px; /* Margin around the container */
+}
+
+.container7 h1 {
+    color:white; /* Text color for the heading */
+    margin-bottom: 20px; 
+    margin-right: -10px;
+}
+
+.con7 img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: 300px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for images */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .container7 {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .container7 h1 {
+        font-size: 1.5em; /* Adjust heading size for smaller screens */
+    }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container6 {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .con5 {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .con5 {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .fourcon {
+        width: calc(50% - 40px); /* Adjust width for smaller screens */
+    }
+
     .logo {
         margin-left: 20px; 
     }
@@ -184,8 +391,34 @@ button {
     }
 }
 
+@media (max-width: 480px) {
+    .fourcon {
+        width: calc(100% - 40px); /* Full width on mobile */
+    }
 
+    .logo {
+        margin-left: 10px; 
+    }
 
+    .searchbar.container {
+        margin-left: 5px; 
+    }
 
+    .location {
+        margin-right: 5px; 
+    }
 
+    button {
+        padding: 3px; 
+        font-size: 14px; 
+    }
 
+    .category-item {
+        width: 100px; /* Adjust size for mobile */
+    }
+
+    .square {
+        width: 60px; /* Adjust square size for mobile */
+        height: 60px; /* Adjust square size for mobile */
+    }
+}
