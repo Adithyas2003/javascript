@@ -384,8 +384,6 @@ button:hover {
 }
 
 
-
-
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .logo {
@@ -399,6 +397,15 @@ button:hover {
     .location {
         margin-right: 10px; 
     }
+
+    .headerleft {
+        padding: 5px 10px; /* Reduce padding */
+    }
+
+    .mainnavbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
 }
 
 @media (max-width: 768px) {
@@ -407,7 +414,8 @@ button:hover {
     }
 
     .fourcon {
-        width: calc(50% - 40px); /* Adjust width for smaller screens */
+        width: calc(50% - 20px); /* Adjust width for smaller screens */
+        margin: 10px; /* Add margin */
     }
 
     .con5 {
@@ -423,15 +431,20 @@ button:hover {
         height: 80px; 
     }
 
-    button {
-        padding: 5px; 
-        font-size: 16px; 
+    .searchbar.container {
+        width: 100%; /* Full width for search bar */
+        margin: 10px 0; /* Margin for separation */
+    }
+
+    .button {
+        width: 100%; /* Full width for buttons */
+        font-size: 16px; /* Adjust font size */
     }
 }
 
 @media (max-width: 480px) {
     .fourcon {
-        width: calc(100% - 40px); /* Full width on mobile */
+        width: calc(100% - 20px); /* Full width on mobile */
     }
 
     .category-item {
@@ -443,9 +456,21 @@ button:hover {
         height: 60px; 
     }
 
-    button {
-        padding: 3px; 
-        font-size: 14px; 
+    .button {
+        padding: 5px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    h1 {
+        font-size: 1.2em; /* Smaller title font */
+        margin-left: 10px; /* Adjust margin */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Smaller subtitle font */
+    }
+
+    .containerrightside {
+        padding: 10px; /* Reduce padding */
     }
 }
-
