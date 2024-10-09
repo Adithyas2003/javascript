@@ -328,61 +328,216 @@ h1 {
     border-radius: 8px; 
 }
 .container8 {
-    display: flex; /* Use flexbox for layout */
-    margin: 20px; /* Margin around the container */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
-
 .container8slide {
-    width: 50%; /* Width for image container */
-    position: relative; /* For slide positioning */
-    overflow: hidden; /* Hide overflow for clean edges */
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
-
 .slide {
-    display: none; /* Hide all slides by default */
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
 }
-
-.slide.active {
-    display: flex; /* Show the active slide */
-    flex-direction: row; /* Align image and text side by side */
-    width: 100%; /* Full width for the active slide */
-}
-
 .slide img {
-    width: 100%; /* Image takes full width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: rounded corners */
+    width: 50%; /* Half width for image */
+    height: 400px; /* Fixed height */
+    object-fit: cover;
 }
-
 .containerrightside {
-    padding: 20px; /* Space around text */
-    display: flex; 
-    flex-direction: column; /* Stack title and subtitle */
-    justify-content: center; /* Center content vertically */
+    width: 50%; /* Half width for text */
+    padding: 20px; /* Spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #333; /* Text color */
+}
+.active {
+    display: block;
+}
+.con9img {
+    background-color: rgb(5, 5, 8); 
+    border-radius: 8px; 
+    margin: 10px; 
+    padding: 15px; 
+    width: calc(25% - 40px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: inline-block; 
 }
 
-.containerrightside h1,
-.containerrightside h3 {
-    margin: 0 0 10px; /* Margin for titles */
+.con9img img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
 }
 
-.button{
-    padding: 10px 15px; /* Button padding */
-    background-color: #007BFF; /* Button color */
-    color: white; /* Text color */
+
+.con10 img {
+    width: 300px; 
+    height: auto; 
+    border-radius: 16px; /* Rounded corners for the image */
+    margin-top: 30px; /* Space above the image */
+    margin: 10px; /* Margin around the image */
+    padding: 15px; /* Inner padding */
+    background-color: rgb(5, 5, 8); /* Background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    display: inline-block; /* Make it an inline block for proper layout */
+    width: calc(25% - 40px); /* Adjust for four items per row with margin */
+}
+.container11 {
+    /* text-align: center;  */
+    padding: 20px; /* Padding around the container */
+    background-color: black; /* Light background color */
+    /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px auto; /* Center the container */
+    max-width: 1000px; /* Maximum width for the container */
+}
+
+.container11 h1 {
+    font-size: 29px; /* Font size for the heading */
+    color:white; /* Dark text color */
+    margin-bottom: 30px; /* Space below the heading */
+    margin-right: 100px;
+}
+
+.con11 {
+    display: flex; /* Use flexbox for layout */
+    /* flex-wrap: wrap; */
+    justify-content: center; /* Center items horizontally */
+}
+
+.con11 img {
+    width: calc(20% - -1px); /* Adjust width for four images per row */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Space around images */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.container12 {
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding around the container */
+    background-color: black; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px auto; /* Center the container */
+    max-width: 800px; /* Maximum width for the container */
+}
+
+.con12-item {
+    margin: 10px; /* Space around each item */
+}
+
+.con12-item img {
+    width: 700px; /* Fixed width for images (adjust as needed) */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Flexbox layout for the container */
+.container12 {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; 
+}
+.con13 img {
+    width: 500px; 
+    height: auto; 
+    border-radius: 20px; /* Rounded corners for the image */
+    margin-top: 30px; /* Space above the image */
+    margin: 10px; /* Margin around the image */
+    padding: 15px; /* Inner padding */
+    background-color: rgb(5, 5, 8); /* Background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    /* display: inline-block;  */
+    width: calc(25% - 40px); /* Adjust for four items per row with margin */
+}
+.scrollingcontainers {
+    display: flex; /* Use flexbox for layout */
+    overflow: hidden; /* Hide overflow for the scrolling container */
+    position: relative; /* Position relative for button placement */
+}
+
+.scrolling-content {
+    display: flex; /* Flexbox for images */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    padding: 10px; /* Padding around the container */
+    scrollbar-width: thin; /* For Firefox */
+}
+
+.scrolling-content::-webkit-scrollbar {
+    height: 8px; /* Height of the scrollbar */
+}
+
+.scrolling-content::-webkit-scrollbar-thumb {
+    background: #ccc; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded edges for the scrollbar */
+}
+
+.scrolling-content img {
+    height: 250px; /* Set a fixed height for images */
+    margin: 0 10px; /* Space around images */
+    border-radius: 8px; /* Rounded corners for images */
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: transform 0.2s; /* Smooth transition effect */
+}
+
+.scrolling-content img:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.scroll-button {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
     border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer on hover */
-    transition: background-color 0.3s; /* Transition effect */
+    cursor: pointer; /* Pointer cursor */
+    padding: 10px; /* Padding for the button */
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    z-index: 1; /* Ensure buttons are on top */
+    border-radius: 50%; /* Round buttons */
 }
 
-button:hover {
-    background-color: #0056b3; /* Darker on hover */
+.left {
+    left: 10px; /* Position on the left */
 }
-.title1{
+
+.right {
+    right: 10px; /* Position on the right */
+}
+.footer {
+    padding: 20px; /* Padding for the footer */
+    background-color:black; /* Background color */
+}
+.footer h3{
     color: white;
 }
+.input-container {
+    position: relative; /* Position relative for the arrow */
+    width: 400px; /* Set the width as needed */
+}
 
+.containerfoot {
+    width: 100%; /* Full width of the container */
+    padding: 10px 40px; /* Padding for text and space for the arrow */
+    border: 1px solid #ccc; /* Border for the input */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-image: url('./image/right-arrow.png'); /* Background image */
+    background-repeat: no-repeat; /* No repeat for the image */
+    background-position: right 10px center; /* Position the arrow */
+    background-size: 20px 20px; /* Size of the arrow */
+    /* Additional styles to remove default appearance */
+    font-size: 16px; /* Font size */
+}
+
+.containerfoot::placeholder {
+    color: #aaa; /* Placeholder color */
+    opacity: 1; /* Ensure visibility */
+}
 
 /* Responsive Styles */
 @media (max-width: 1024px) {

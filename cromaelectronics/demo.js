@@ -87,3 +87,75 @@ setInterval(() => {
     changeSlide(1); // Automatically go to the next slide
 }, 5000);
     });
+
+
+let Slide = 0;
+
+    function changeSlide(direction) {
+        const slides = document.querySelectorAll('.slide');
+        slides[Slide].classList.remove('active');
+
+        currentSlide += direction;
+
+        // Wrap around the slides
+        if (Slide >= slides.length) {
+            Slide = 0;
+        } else if (Slide < 0) {
+            Slide = slides.length - 1;
+        }
+
+        slides[Slide].classList.add('active');
+        const offset = -Slide * 100; // Adjust based on the current slide
+        document.querySelector('.container8slide').style.transform = `translateX(${offset}%)`;
+    }
+
+    
+    setInterval(() => {
+        changeSlide(1);
+    }, 3000);
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const img = document.querySelector('.con10 img');
+
+        if (img) {
+            // Set desired width and height
+            img.style.width = '100%'; // Full width of the container
+            img.style.height = '200px'; // Set a specific height
+
+            // Optionally, maintain aspect ratio by setting height to auto
+            img.style.objectFit = 'cover'; // Cover ensures the image fills the area
+        }
+    });
+      
+    document.addEventListener('DOMContentLoaded', function() {
+        const img = document.querySelector('.con13 img'); // Select the image within the con13 container
+    
+        if (img) {
+            // Set desired width and height
+            img.style.width = '100%'; // Full width of the container
+            img.style.height = '400px'; // Set a specific height
+    
+            // Maintain aspect ratio by using object-fit
+            img.style.objectFit = 'cover'; // Ensures the image fills the area without distortion
+        }
+    });
+    
+
+    function scrollLeft() {
+        const container = document.querySelector('.scrolling-content');
+        const scrollAmount = 150; // Adjust this value for how much to scroll
+        container.scrollBy({
+            left: -scrollAmount, // Scroll left
+            behavior: 'smooth' // Smooth scrolling
+        });
+    }
+    
+    function scrollRight() {
+        const container = document.querySelector('.scrolling-content');
+        const scrollAmount = 150; // Adjust this value for how much to scroll
+        container.scrollBy({
+            left: scrollAmount, // Scroll right
+            behavior: 'smooth' // Smooth scrolling
+        });
+    }
+    
